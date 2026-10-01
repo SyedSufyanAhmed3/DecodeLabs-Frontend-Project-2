@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="TasteBite — modern restaurant website and table reservation.">
+
+  <title>TasteBite | Restaurant</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ================================
+       SMOOTH NAVIGATION
+    ================================= */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    section[id],
+    footer[id] {
+      scroll-margin-top: 90px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================================
+       HEADER / NAVIGATION
+  ================================= -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <!-- LOGO -->
+      <a class="logo" href="#home" aria-label="TasteBite home">
+        <span class="logo-mark">TB</span>
+        <span>Taste<span>Bite</span></span>
+      </a>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- NAVIGATION -->
+      <nav class="nav" id="nav-menu" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+
+        <a class="nav-link" href="#about">About</a>
+
+        <a class="nav-link" href="#menu">Menu</a>
+
+        <a class="nav-link" href="#specials">Specials</a>
+
+        <a class="nav-link" href="#reviews">Reviews</a>
+
+        <a class="nav-link" href="#contact">Contact</a>
+
+        <a class="nav-cta" href="#reservation">
+          Book a Table
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ================================
+       MAIN CONTENT
+  ================================= -->
+  <main>
+
+    <!-- ================================
+         HOME / HERO
+    ================================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+          <span class="eyebrow">
+            FRESH • SEASONAL • LOCAL
+          </span>
+
+          <h1>
+            Good food.<br>
+            <em>Good mood.</em>
+          </h1>
+
+          <p>
+            Fresh ingredients, generous portions, and warm hospitality.
+            Come hungry, leave happy.
+          </p>
+
+          <div class="hero-actions">
+
+            <a class="btn btn-primary" href="#reservation">
+              Reserve a Table
+            </a>
+
+            <a class="btn btn-light" href="#menu">
+              Explore Menu
+            </a>
+
+          </div>
+
+          <div class="hero-note">
+            <span class="dot"></span>
+            Open daily · 12:00 PM – 10:00 PM
+          </div>
+
+        </div>
+
+
+        <div class="hero-art reveal">
+
+          <div class="plate-shadow"></div>
+
+          <div class="food-orb">
+            🍝
+          </div>
+
+          <div class="floating-card card-top">
+            <strong>4.9/5</strong>
+            <span>Guest rating</span>
+          </div>
+
+          <div class="floating-card card-bottom">
+            <span>Today’s pick</span>
+            <strong>Truffle Pasta</strong>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================
+         ABOUT
+    ================================= -->
+    <section class="section about" id="about">
+      <div class="container two-col">
+
+        <div class="about-visual reveal">
+
+          <div class="about-card">
+            <div class="about-icon">👨‍🍳</div>
+            <span>Since 2018</span>
+            <strong>Made with care</strong>
+          </div>
+
+          <div class="about-image">
+            🥗
+          </div>
+
+        </div>
+
+
+        <div class="section-content reveal">
+
+          <span class="eyebrow">
+            OUR STORY
+          </span>
+
+          <h2>
+            A little place with a big love for food.
+          </h2>
+
+          <p>
+            TasteBite started with one simple idea:
+            serve honest food made from quality ingredients
+            in a place where everyone feels welcome.
+          </p>
+
+          <p>
+            Our chefs combine familiar comfort food with
+            seasonal ingredients to create dishes that feel
+            both exciting and familiar.
+          </p>
+
+          <div class="stats">
+
+            <div>
+              <strong>8+</strong>
+              <span>Years serving</span>
+            </div>
+
+            <div>
+              <strong>35+</strong>
+              <span>Signature dishes</span>
+            </div>
+
+            <div>
+              <strong>12k+</strong>
+              <span>Happy guests</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================
+         MENU
+    ================================= -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div>
+
+            <span class="eyebrow">
+              OUR MENU
+            </span>
+
+            <h2>
+              Made to make you smile.
+            </h2>
+
+          </div>
+
+          <p>
+            Seasonal favourites, comforting classics
+            and chef-created plates.
+          </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+          <article class="menu-card reveal">
+
+            <div class="dish-icon">
+              🍝
+            </div>
+
+            <div class="dish-info">
+
+              <span class="category">
+                PASTA
+              </span>
+
+              <h3>
+                Truffle Cream Pasta
+              </h3>
+
+              <p>
+                Silky cream, parmesan, herbs and truffle.
+              </p>
+
+              <strong>
+                Rs. 1,450
+              </strong>
+
+            </div>
+
+          </article>
+
+
+          <article class="menu-card reveal">
+
+            <div class="dish-icon">
+              🍕
+            </div>
+
+            <div class="dish-info">
+
+              <span class="category">
+                PIZZA
+              </span>
+
+              <h3>
+                Garden Margherita
+              </h3>
+
+              <p>
+                Tomato, mozzarella, basil and olive oil.
+              </p>
+
+              <strong>
+                Rs. 1,250
+              </strong>
+
+            </div>
+
+          </article>
+
+
+          <article class="menu-card reveal">
+
+            <div class="dish-icon">
+              🥩
+            </div>
+
+            <div class="dish-info">
+
+              <span class="category">
+                GRILL
+              </span>
+
+              <h3>
+                Herb Grilled Steak
+              </h3>
+
+              <p>
+                Char-grilled beef with herb butter and fries.
+              </p>
+
+              <strong>
+                Rs. 2,950
+              </strong>
+
+            </div>
+
+          </article>
+
+
+          <article class="menu-card reveal">
+
+            <div class="dish-icon">
+              🥗
+            </div>
+
+            <div class="dish-info">
+
+              <span class="category">
+                SALAD
+              </span>
+
+              <h3>
+                Harvest Garden Bowl
+              </h3>
+
+              <p>
+                Greens, roasted vegetables, feta and dressing.
+              </p>
+
+              <strong>
+                Rs. 950
+              </strong>
+
+            </div>
+
+          </article>
+
+
+          <article class="menu-card reveal">
+
+            <div class="dish-icon">
+              🍔
+            </div>
+
+            <div class="dish-info">
+
+              <span class="category">
+                BURGERS
+              </span>
+
+              <h3>
+                Signature Beef Burger
+              </h3>
+
+              <p>
+                Juicy beef, cheddar, caramelized onion and sauce.
+              </p>
+
+              <strong>
+                Rs. 1,350
+              </strong>
+
+            </div>
+
+          </article>
+
+
+          <article class="menu-card reveal">
+
+            <div class="dish-icon">
+              🍰
+            </div>
+
+            <div class="dish-info">
+
+              <span class="category">
+                DESSERT
+              </span>
+
+              <h3>
+                Classic Cheesecake
+              </h3>
+
+              <p>
+                Creamy cheesecake with berry compote.
+              </p>
+
+              <strong>
+                Rs. 750
+              </strong>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================
+         SPECIALS
+    ================================= -->
+    <section class="specials" id="specials">
+      <div class="container specials-inner reveal">
+
+        <div>
+
+          <span class="eyebrow">
+            CHEF'S SPECIAL
+          </span>
+
+          <h2>
+            Weekend Pasta Night
+          </h2>
+
+          <p>
+            Enjoy any two signature pasta dishes with a
+            complimentary dessert every Friday and Saturday.
+          </p>
+
+        </div>
+
+
+        <div class="special-price">
+
+          <span>
+            FROM
+          </span>
+
+          <strong>
+            Rs. 2,499
+          </strong>
+
+          <a href="#reservation">
+            Book now →
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================
+         REVIEWS
+    ================================= -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+
+        <div class="section-heading center reveal">
+
+          <span class="eyebrow">
+            GUEST REVIEWS
+          </span>
+
+          <h2>
+            What our guests say.
+          </h2>
+
+        </div>
+
+
+        <div class="review-grid">
+
+          <article class="review-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Fresh ingredients and generous portions.
+              The risotto is my new favorite.”
+            </p>
+
+            <div class="reviewer">
+
+              <span>
+                DR
+              </span>
+
+              <div>
+                <strong>
+                  Daniel R.
+                </strong>
+
+                <small>
+                  Verified Guest
+                </small>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article class="review-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Lovely atmosphere and quick service.
+              Booking online was incredibly easy.”
+            </p>
+
+            <div class="reviewer">
+
+              <span>
+                PK
+              </span>
+
+              <div>
+                <strong>
+                  Priya K.
+                </strong>
+
+                <small>
+                  Verified Guest
+                </small>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article class="review-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “The food was excellent and the staff made
+              our family dinner feel special.”
+            </p>
+
+            <div class="reviewer">
+
+              <span>
+                AM
+              </span>
+
+              <div>
+                <strong>
+                  Ahmed M.
+                </strong>
+
+                <small>
+                  Verified Guest
+                </small>
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================
+         RESERVATION
+    ================================= -->
+    <section class="section reservation" id="reservation">
+      <div class="container reservation-grid">
+
+        <div class="reservation-copy reveal">
+
+          <span class="eyebrow">
+            RESERVATION
+          </span>
+
+          <h2>
+            Let's make your<br>
+            <em>next meal special.</em>
+          </h2>
+
+          <p>
+            Reserve your table today and enjoy delicious seasonal
+            food in a warm and welcoming atmosphere.
+          </p>
+
+
+          <div class="contact-list">
+
+            <div>
+
+              <span>
+                📍
+              </span>
+
+              <div>
+
+                <strong>
+                  Visit Us
+                </strong>
+
+                <small>
+                  12 Market Street, Karachi
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                ◷
+              </span>
+
+              <div>
+
+                <strong>
+                  Opening Hours
+                </strong>
+
+                <small>
+                  Daily · 12:00 PM – 10:00 PM
+                </small>
+
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                ☎
+              </span>
+
+              <div>
+
+                <strong>
+                  Call Us
+                </strong>
+
+                <small>
+                  +92 300 0000000
+                </small>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- BOOKING FORM -->
+        <form class="booking-form reveal" id="booking-form">
+
+          <div class="form-header">
+
+            <span>
+              BOOK A TABLE
+            </span>
+
+            <h3>
+              Reserve your table
+            </h3>
+
+            <p>
+              We'll confirm your reservation shortly.
+            </p>
+
+          </div>
+
+
+          <div class="form-grid">
+
+            <label>
+              Full Name
+
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+            </label>
+
+
+            <label>
+              Email Address
+
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </label>
+
+
+            <label>
+              Phone Number
+
+              <input id="phone" name="phone" type="tel" placeholder="+92 300 0000000" required>
+            </label>
+
+
+            <label>
+              Date
+
+              <input id="date" name="date" type="date" required>
+            </label>
+
+
+            <label>
+              Guests
+
+              <select id="guests" name="guests" required>
+                <option value="2">
+                  2 Guests
+                </option>
+
+                <option>
+                  3 Guests
+                </option>
+
+                <option>
+                  4 Guests
+                </option>
+
+                <option>
+                  5 Guests
+                </option>
+
+                <option>
+                  6 Guests
+                </option>
+
+                <option>
+                  7+ Guests
+                </option>
+              </select>
+
+            </label>
+
+
+            <label>
+              Preferred Time
+
+              <select id="time" name="time" required>
+                <option>
+                  12:00 PM
+                </option>
+
+                <option>
+                  1:00 PM
+                </option>
+
+                <option>
+                  2:00 PM
+                </option>
+
+                <option>
+                  6:00 PM
+                </option>
+
+                <option>
+                  7:00 PM
+                </option>
+
+                <option>
+                  8:00 PM
+                </option>
+
+                <option>
+                  9:00 PM
+                </option>
+              </select>
+
+            </label>
+
+
+            <label class="full">
+
+              Special Request (Optional)
+
+              <textarea id="message" name="message" rows="3"
+                placeholder="Birthday, anniversary, dietary requirements..."></textarea>
+
+            </label>
+
+          </div>
+
+
+          <button class="btn btn-primary submit-btn" type="submit">
+            Confirm Reservation
+            <span>→</span>
+          </button>
+
+
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================================
+       FOOTER / CONTACT
+  ================================= -->
+  <footer class="footer" id="contact">
+
+    <div class="container footer-grid">
+
+      <div>
+
+        <a class="logo footer-logo" href="#home">
+          <span class="logo-mark">
+            TB
+          </span>
+
+          <span>
+            Taste<span>Bite</span>
+          </span>
+
+        </a>
+
+        <p>
+          Good food, warm moments, happy memories.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Explore
+        </h4>
+
+        <a href="#about">
+          About Us
+        </a>
+
+        <a href="#menu">
+          Our Menu
+        </a>
+
+        <a href="#specials">
+          Specials
+        </a>
+
+        <a href="#reviews">
+          Reviews
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Contact
+        </h4>
+
+        <a href="tel:+923000000000">
+          +92 300 0000000
+        </a>
+
+        <a href="mailto:hello@tastebite.com">
+          hello@tastebite.com
+        </a>
+
+        <span>
+          Karachi, Pakistan
+        </span>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Opening Hours
+        </h4>
+
+        <span>
+          Mon – Sun
+        </span>
+
+        <span>
+          12:00 PM – 10:00 PM
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        ©
+        <span id="year"></span>
+        TasteBite. All rights reserved.
+      </span>
+
+      <a href="#home">
+        Back to top ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="back-to-top" type="button" aria-label="Back to top">
+    ↑
+  </button>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
